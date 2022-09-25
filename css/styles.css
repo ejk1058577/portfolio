@@ -1,0 +1,43 @@
+body {
+    background-color: #F8F7FF;
+}
+
+.container {
+    padding-left: 5%;
+    padding-right: 5%;
+    max-width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #272932;
+    height: 3em
+}
+
+.section-bl {
+    background-color: #272932;
+    color: #F8F7FF;
+}
+
+.section-wh {
+    background-color: #F8F7FF;
+}
+
+.section-bl, .section-wh {
+    max-width: 40%;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px #d9d9d9;
+}
+
+.wrapper-hz {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-display {
+
+}
