@@ -1,19 +1,61 @@
 body {
     background-color: #F8F7FF;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    color: #F8F7FF;
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    color: #84828F;
 }
 
 .container {
-    padding-left: 5%;
-    padding-right: 5%;
-    max-width: 85%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
+.wrapper-holders {
+    padding-bottom: 5%;
+    background-color: #4F7CAC;
+}
+
 nav {
     background-color: #272932;
-    height: 3em
+    min-height: 6em;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #F8F7FF;
+    font-size: 28px;
+
+}
+
+footer {
+    background-color: #272932;
+    height: 4em;
+    color:#F8F7FF;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    color:#F8F7FF;
 }
 
 .section-bl {
@@ -23,6 +65,7 @@ nav {
 
 .section-wh {
     background-color: #F8F7FF;
+    color: #272932;
 }
 
 .section-bl, .section-wh {
@@ -30,14 +73,78 @@ nav {
     padding: 2%;
     margin: 1%;
     border-radius: 8px;
-    box-shadow: 1px 1px 5px #d9d9d9;
+}
+
+.shadow {
+    box-shadow: 1px 1px 5px #272932;
 }
 
 .wrapper-hz {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     flex-direction: row;
 }
 
 .card-display {
-
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #F8F7FF;
+    border-radius: 10px;
+    width: 240px;
+    padding-bottom: 50px;
+    color:#272932;
+}
+
+.card img {
+    max-height: 175px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-txt-wrapper {
+    padding: 5%;
+}
+
+.btn-ylw {
+    color: #272932;
+    background-color: #FFBE0B;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: #272932;
+    border-style: fill;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.wrapper-contact {
+    background-color: #84828F;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+      flex-direction: column;
+      gap: 0.5em;
+      padding: 1em;
+    }
+
+    .section-wh {
+        max-width: 100%;
+    }
+  }
