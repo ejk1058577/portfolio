@@ -86,6 +86,7 @@ footer p {
     margin-right: 10%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .card-display {
@@ -133,8 +134,8 @@ footer p {
     padding-bottom: 5px;
 }
 
-.wrapper-contact {
-    background-color: #84828F;
+#me {
+    width: 500px;
 }
 
 @media screen and (max-width: 800px) {
@@ -147,4 +148,13 @@ footer p {
     .section-wh {
         max-width: 100%;
     }
+
+    .wrapper-hz {
+        flex-wrap: wrap;
+    }
+
+    #me {
+        width: 400px;
+    }
   }
+
