@@ -91,6 +91,10 @@ footer textarea[name="c-message"] {
     height: 125px;
 }
 
+#c-success {
+    color: #FFBE0B;
+}
+
 .section-bl {
     background-color: #272932;
     color: #F8F7FF;
