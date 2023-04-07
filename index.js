@@ -1,25 +1,50 @@
-document.getElementById("c-submit").onclick = () => {
-    let fields = [document.getElementById("c-email"), document.getElementById("c-message")]
+(async () => {
+    const GITHUB_USERNAME = 'ejk1058577';
+    const COMMITS_CONTAINER = '#github-contributions';
+    const LANGUAGES_CONTAINER = '#github-language-distribution';
 
-    fields.forEach(f => {
-        f.style.borderColor = ""
-    })
+    const githubStats = await GithubStats(GITHUB_USERNAME);
 
-    if (fields[0].value == "" || fields[1].value == "") {
-        fields.forEach(f => {
-            if (f.value == "") {
-                f.style.borderColor = "#ab4b52"
+    let githubCommits = document.querySelector(COMMITS_CONTAINER);
+    /* Render SVG for commit contributions */
+    let commitsContribSVG = githubStats.commitsContribSVG({
+        rows: 7,
+        space: 4,
+        rectWidth: 16,
+        levelColors: [
+            {
+                minCommits: 0,
+                color: '#ebedf0'
+            },
+            {
+                minCommits: 1,
+                color: '#c6e48b'
+            },
+            {
+                minCommits: 9,
+                color: '#7bc96f'
+            },
+            {
+                minCommits: 17,
+                color: '#239a3b'
+            },
+            {
+                minCommits: 26,
+                color: '#196127'
             }
-        })
-        return
-    }
+        ]
+    });
+    githubCommits.appendChild(commitsContribSVG);
 
-    let reg = /^\S+@\S+\.\S+$/
+    let githubLanguageDistribution = document.querySelector(LANGUAGES_CONTAINER);
+    /* Render SVG for language contributions */
+    let languageContribSVG = githubStats.languagesContribSVG({
+        barHeight: 20,
+        barWidth: githubLanguageDistribution.offsetWidth,
+        lineSpacing: 4,
+        languageNameWidth: 100,
+        fontSize: 14
+    });
+    //githubLanguageDistribution.appendChild(languageContribSVG);
+})();
 
-    if (!reg.test(fields[0].value)) {
-        fields[0].style.borderColor = "#ab4b52"
-        return
-    }
-
-    document.getElementById("c-success").hidden = false
-}

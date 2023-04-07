@@ -26,11 +26,11 @@ p {
 
 .wrapper-holders {
     padding-bottom: 5%;
-    background-color: #4F7CAC;
+    background-color: #0f0f0f;
 }
 
 nav {
-    background-color: #272932;
+    background-color: #0f0f0f;
     min-height: 6em;
     display: flex;
     gap: 5%;
@@ -44,11 +44,15 @@ nav a {
 }
 
 footer {
-    background-color: #272932;
-    color:#F8F7FF;
+    background-color: #F8F7FF;
+    color:#0f0f0f;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 50px;
+}
+
+footer h2 {
+    color: #0f0f0f;
 }
 
 footer form {
@@ -96,13 +100,13 @@ footer textarea[name="c-message"] {
 }
 
 .section-bl {
-    background-color: #272932;
+    background-color: #0f0f0f;
     color: #F8F7FF;
 }
 
 .section-wh {
     background-color: #F8F7FF;
-    color: #272932;
+    color: #0f0f0f;
 }
 
 .section-bl, .section-wh {
@@ -113,7 +117,7 @@ footer textarea[name="c-message"] {
 }
 
 .shadow {
-    box-shadow: 1px 1px 5px #272932;
+    box-shadow: 1px 1px 5px #0f0f0f;
 }
 
 .wrapper-hz {
@@ -145,7 +149,7 @@ footer textarea[name="c-message"] {
     border-radius: 10px;
     width: 240px;
     padding-bottom: 50px;
-    color:#272932;
+    color:#0f0f0f;
 }
 
 .card img {
@@ -159,11 +163,11 @@ footer textarea[name="c-message"] {
 }
 
 .btn-ylw {
-    color: #272932;
+    color: #0f0f0f;
     background-color: #FFBE0B;
     border-radius: 20px;
     border-width: 1px;
-    border-color: #272932;
+    border-color: #0f0f0f;
     border-style: fill;
     padding-left: 20px;
     padding-right: 20px;
@@ -198,4 +202,3 @@ footer textarea[name="c-message"] {
         width: 380px;
     }
   }
-
