@@ -1,0 +1,111 @@
+@use "catppuccin" as *;
+
+$heading-size: 2.5em;
+
+body {
+    background-color: $base;
+    margin: 0 auto;
+    font-family: sans-serif;
+    color: $text;
+}
+
+h1 {
+    font-size: $heading-size;
+    color: $blue;
+}
+
+h2 {
+    @extend h1;
+    text-align: center;
+}
+
+.crust {
+    background-color: $crust;
+}
+
+.subtext {
+    color: $subtext1;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    min-height: 4em;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+    a {
+        color: $blue;
+    }
+}
+
+footer {
+    padding: 0 5% 5% 2em;
+}
+
+.wrapper-hz {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 10%;
+    padding: 5% 0;
+}
+
+.card-display {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    background-color: $base;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 10px;
+    width: 12em;
+    padding-bottom: 2em;
+
+    img {
+        max-height: 8em;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}
+
+.card-text-wrapper {
+    padding: 5%;
+}
+
+.btn-ylw {
+    color: $text;
+    background-color: $yellow;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: $text;
+    border-style: fill;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+#me {
+    width: 380px;
+}
