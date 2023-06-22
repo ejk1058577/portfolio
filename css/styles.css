@@ -1,204 +1,106 @@
 body {
-    background-color: #F8F7FF;
-    margin: 0;
-    font-family: sans-serif;
+  background-color: #eff1f5;
+  margin: 0 auto;
+  font-family: sans-serif;
+  color: #4c4f69;
 }
 
-h1 {
-    font-size: 40px;
+h1, h2 {
+  font-size: 2.5em;
+  color: #1e66f5;
 }
 
 h2 {
-    color: #F8F7FF;
-    text-align: center;
-    font-size: 40px;
+  text-align: center;
 }
 
-p {
-    color: #84828F;
+.crust {
+  background-color: #dce0e8;
+}
+
+.subtext {
+  color: #5c5f77;
 }
 
 .container {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.wrapper-holders {
-    padding-bottom: 5%;
-    background-color: #0f0f0f;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
-    background-color: #0f0f0f;
-    min-height: 6em;
-    display: flex;
-    gap: 5%;
-    justify-content: center;
-    align-items: center;
+  min-height: 4em;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
 }
-
 nav a {
-    color: #F8F7FF;
-    font-size: 28px;
+  color: #1e66f5;
 }
 
 footer {
-    background-color: #F8F7FF;
-    color:#0f0f0f;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 50px;
-}
-
-footer h2 {
-    color: #0f0f0f;
-}
-
-footer form {
-    width: 900px;
-    margin: 0 auto;
-}
-
-footer p, label {
-    color:#F8F7FF;
-    font-size: 18px;
-}
-
-footer input {
-    margin: 5px;
-    font-size: 14px;
-}
-
-footer input[type="submit"] {
-    font-weight: bold;
-}
-
-footer textarea {
-  font-family: sans-serif;
-  width: 100%;
-  height: 48px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #0272;
-  background-color: #383b48;
-  resize: none;
-  margin: 8px;
-  color: #84828F;
-}
-
-footer textarea[name="c-message"] {
-    height: 125px;
-}
-
-#c-message {
-    height: 125px;
-}
-
-#c-success {
-    color: #FFBE0B;
-}
-
-.section-bl {
-    background-color: #0f0f0f;
-    color: #F8F7FF;
-}
-
-.section-wh {
-    background-color: #F8F7FF;
-    color: #0f0f0f;
-}
-
-.section-bl, .section-wh {
-    max-width: 40%;
-    padding: 2%;
-    margin: 1%;
-    border-radius: 8px;
-}
-
-.shadow {
-    box-shadow: 1px 1px 5px #0f0f0f;
+  padding: 0 5% 5% 2em;
 }
 
 .wrapper-hz {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 10%;
+  padding: 5% 0;
 }
 
 .card-display {
-    margin: 5%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: center;
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: #F8F7FF;
-    border-radius: 10px;
-    width: 240px;
-    padding-bottom: 50px;
-    color:#0f0f0f;
+  text-align: center;
+  background-color: #eff1f5;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 10px;
+  width: 12em;
+  padding-bottom: 2em;
 }
-
 .card img {
-    max-height: 175px;
-    border-radius: 10px;
-    object-fit: cover;
+  max-height: 8em;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-.card-txt-wrapper {
-    padding: 5%;
+.card-text-wrapper {
+  padding: 5%;
 }
 
 .btn-ylw {
-    color: #0f0f0f;
-    background-color: #FFBE0B;
-    border-radius: 20px;
-    border-width: 1px;
-    border-color: #0f0f0f;
-    border-style: fill;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+  color: #4c4f69;
+  background-color: #df8e1d;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #4c4f69;
+  border-style: fill;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.w-40 {
+  width: 40%;
 }
 
 #me {
-    width: 450px;
+  width: 380px;
 }
 
-@media screen and (max-width: 800px) {
-    nav {
-      flex-direction: column;
-      gap: 0.5em;
-      padding: 1em;
-    }
-
-    .section-wh {
-        max-width: 100%;
-    }
-
-    .wrapper-hz {
-        flex-wrap: wrap;
-    }
-
-    #me {
-        width: 400px;
-    }
-
-    footer form {
-        width: 380px;
-    }
-  }
+/*# sourceMappingURL=styles.css.map */
