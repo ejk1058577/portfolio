@@ -70,6 +70,45 @@ footer {
     justify-content: center;
 }
 
+.slideshow {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 10em;
+
+    span {
+        cursor: pointer;
+    }
+}
+
+.slide {
+    border-radius: 10px;
+    background-color: $base;
+    display: flex;
+
+    h3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    img {
+        height: 24em;
+        width: 14em;
+        object-fit:cover;
+        border-radius: 10px;
+    }
+
+    a {
+        color: $blue;
+    }
+}
+
+.slide-content {
+    padding: 2em;
+}
+
 .card {
     text-align: center;
     background-color: $base;

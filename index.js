@@ -1,50 +1,91 @@
-(async () => {
-    const GITHUB_USERNAME = 'ejk1058577';
-    const COMMITS_CONTAINER = '#github-contributions';
-    const LANGUAGES_CONTAINER = '#github-language-distribution';
+const slides = [
+    {
+        title : "voorbeeld project 0",
+        text: "ja dit is 1",
+        image: "https://cataas.com/cat/says/1",
+        link: ["github.com", "naar github"]
+    },
+    {
+        title : "voorbeeld project 2",
+        text: "ja dit is 2",
+        image: "https://cataas.com/cat/says/2",
+        link: ["", "heb geen git :("]
+    },
+    {
+        title : "voorbeeld project 3",
+        text: "ja dit is 3",
+        image: "https://cataas.com/cat/says/3",
+        link: ["github.com", "deze wel weer!"]
+    }
+];
 
-    const githubStats = await GithubStats(GITHUB_USERNAME);
+let currentSlide;
 
-    let githubCommits = document.querySelector(COMMITS_CONTAINER);
-    /* Render SVG for commit contributions */
-    let commitsContribSVG = githubStats.commitsContribSVG({
-        rows: 7,
-        space: 4,
-        rectWidth: 16,
-        levelColors: [
-            {
-                minCommits: 0,
-                color: '#ebedf0'
-            },
-            {
-                minCommits: 1,
-                color: '#c6e48b'
-            },
-            {
-                minCommits: 9,
-                color: '#7bc96f'
-            },
-            {
-                minCommits: 17,
-                color: '#239a3b'
-            },
-            {
-                minCommits: 26,
-                color: '#196127'
-            }
-        ]
+let slide;
+let h3;
+let p;
+let img;
+let a;
+
+let leftBtn;
+let rightBtn;
+
+window.addEventListener('load', e => init());
+
+function init() {
+    console.log('yeah yeah init')
+
+    //content elements
+    slide = document.getElementById('slide');
+    h3 = document.getElementById('slide-title');
+    p = document.getElementById('slide-text');
+    img = document.getElementById('slide-img');
+    a = document.getElementById('slide-link');
+
+    //set buttons
+    leftBtn = document.getElementById('left-btn');
+    rightBtn = document.getElementById('right-btn');
+
+    //listeners
+    leftBtn.addEventListener('click', (e) => {
+        console.log('click');
+        let num = currentSlide == 0 ? slides.length - 1 : currentSlide - 1;
+        setSlide(num);  
     });
-    githubCommits.appendChild(commitsContribSVG);
 
-    let githubLanguageDistribution = document.querySelector(LANGUAGES_CONTAINER);
-    /* Render SVG for language contributions */
-    let languageContribSVG = githubStats.languagesContribSVG({
-        barHeight: 20,
-        barWidth: githubLanguageDistribution.offsetWidth,
-        lineSpacing: 4,
-        languageNameWidth: 100,
-        fontSize: 14
+    rightBtn.addEventListener('click', (e) => {
+        let num = currentSlide == slides.length - 1 ? 0 : currentSlide + 1;
+        setSlide(num);  
     });
-    //githubLanguageDistribution.appendChild(languageContribSVG);
-})();
 
+    //load first content
+    currentSlide = 0;
+    setSlide(currentSlide);
+}
+
+function setSlide(num) {
+    //maybe do some fade thing
+    slide.style.transition = '.4s';
+    slide.style.opacity = '0';
+    slide.style.visibility = 'hidden';
+    setTimeout(() => {
+        //change values
+        h3.innerHTML = slides[num].title;
+        p.innerHTML = slides[num].text;
+        img.src = slides[num].image;
+        a.innerHTML = slides[num].link[1];
+        a.href = slides[num].link[0];
+
+        //update vars
+        currentSlide = num;
+
+        setTimeout(() => {
+            slide.style.opacity = '1';
+            slide.style.visibility = 'visible'
+        }, 500);
+    }, 500);
+}
+
+function setImg(num) {
+    //nvt
+}

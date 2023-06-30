@@ -64,6 +64,41 @@ footer {
   justify-content: center;
 }
 
+.slideshow {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 10em;
+}
+.slideshow span {
+  cursor: pointer;
+}
+
+.slide {
+  border-radius: 10px;
+  background-color: #eff1f5;
+  display: flex;
+}
+.slide h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+.slide img {
+  height: 24em;
+  width: 14em;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.slide a {
+  color: #1e66f5;
+}
+
+.slide-content {
+  padding: 2em;
+}
+
 .card {
   text-align: center;
   background-color: #eff1f5;
