@@ -1,21 +1,27 @@
 const slides = [
     {
-        title : "voorbeeld project 0",
-        text: "ja dit is 1",
-        image: "https://cataas.com/cat/says/1",
-        link: ["github.com", "naar github"]
+        title : "Aimbot",
+        text: `De "Aimbot" is een project dat begonnen was om iets te doen aan de slechte aim van een klasgenoot. Het is een robot die autonomisch rond beweegt terwijl je het moet raken met een laserlamp. Door van dit toestel gebruik te maken kan je hopelijk je aim verbeteren en hoef je nooit meer uit te halen om je teamgenoten!`,
+        image: "./images/aimbot.jpg",
+        link: ["https://github.com/hamid1103/Aimbot3", "De code die door de aimbot gebruikt wordt is hier op github beschikbaar."]
     },
     {
-        title : "voorbeeld project 2",
-        text: "ja dit is 2",
-        image: "https://cataas.com/cat/says/2",
-        link: ["", "heb geen git :("]
+        title : "Reserveringen Malle Babbe",
+        text: "Dit is een custom-made reserveringssysteem voor het eetcafe Malle Babbe. Hiermee kunnen klanten reserveringen maken, en de eigenaren deze bekijken, aanpassen en verwijderen. Dit systeem is niet in gebruik genomen.",
+        image: "./images/mb.png",
+        link: ["#", "Code is niet openbaar beschikbaar."]
     },
     {
-        title : "voorbeeld project 3",
-        text: "ja dit is 3",
-        image: "https://cataas.com/cat/says/3",
-        link: ["github.com", "deze wel weer!"]
+        title : "Bestelling",
+        text: "Dit is slechts een onderdeel van een webservice die ingericht is om zo makkelijk mogelijk bruikbaar te zijn voor blind- en slechtzienden. Het bied een fijne interface die met screenreader software goed te navigeren is.",
+        image: "./images/cle3.png",
+        link: ["https://github.com/hamid1103/CLE3WebserviceApp", "Code op github."]
+    },
+    {
+        title : "Het Meeuwen Banket",
+        text: "Het Meeuwen Banket is een kleine game die geinspireerd is door de omgeving van Noordplein, Rotterdam. In deze game speel je als een meeuw die zijn best moet doen om te overleven... door eten te stelen!",
+        image: "./images/meeuw.png",
+        link: ["github.com", "Code op github."]
     }
 ];
 
