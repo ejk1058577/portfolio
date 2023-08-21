@@ -8,19 +8,19 @@ const slides = [
     {
         title : "Reserveringen Malle Babbe",
         text: "Dit is een custom-made reserveringssysteem voor het eetcafe Malle Babbe. Hiermee kunnen klanten reserveringen maken, en de eigenaren deze bekijken, aanpassen en verwijderen. Dit systeem is niet in gebruik genomen.",
-        image: "./images/mb.png",
+        image: "./images/mb.PNG",
         link: ["#", "Code is niet openbaar beschikbaar."]
     },
     {
         title : "Bestelling",
         text: "Dit is slechts een onderdeel van een webservice die ingericht is om zo makkelijk mogelijk bruikbaar te zijn voor blind- en slechtzienden. Het bied een fijne interface die met screenreader software goed te navigeren is.",
-        image: "./images/cle3.png",
+        image: "./images/cle3.PNG",
         link: ["https://github.com/hamid1103/CLE3WebserviceApp", "Code op github."]
     },
     {
         title : "Het Meeuwen Banket",
         text: "Het Meeuwen Banket is een kleine game die geinspireerd is door de omgeving van Noordplein, Rotterdam. In deze game speel je als een meeuw die zijn best moet doen om te overleven... door eten te stelen!",
-        image: "./images/meeuw.png",
+        image: "./images/meeuw.PNG",
         link: ["github.com", "Code op github."]
     }
 ];
