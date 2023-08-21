@@ -7,7 +7,8 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="./css/styles.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/byliuyang/github-stats@0.0.4/src/github-stats.js"></script>
+    <script src="https://kit.fontawesome.com/38035b4eb1.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
     </head>
 </head>
 <body>
@@ -29,31 +30,19 @@
         </div>
         <div id="projecten" class="wrapper-holders crust">
             <h2>Projecten</h2>
-            <div class="card-display">
-                <div class="card shadow">
-                    <img src="./images/placeholder.jpg">
-                    <div class="card-txt-wrapper">
-                        <h3>Voorbeeld</h3>
-                        <p class="subtext1">Dit is een voorbeeld project. Ik wil hier graag thumbnails voor mijn projecten laten zien.</p>
-                        <btn class="btn-ylw"><b>Lees meer</b></btn>
+            <div class="slideshow">
+                <span id="left-btn" class="fa-solid fa-caret-left fa-2xl fa-sharp fa-beat"></span>
+                <div id="slide" class="slide w-40">
+                    <img src="./images/placeholder.jpg" id="slide-img">
+                    <div class="slide-content">
+                        <h3 id="slide-title"></h3>
+                        <p id="slide-text">
+                            
+                        </p>
+                        <a id="slide-link"></a>
                     </div>
                 </div>
-                <div class="card shadow">
-                    <img src="./images/placeholder.jpg">
-                    <div class="card-txt-wrapper">
-                        <h3>Voorbeeld</h3>
-                        <p class="subtext1">Dit is een voorbeeld project. Ik wil hier graag thumbnails voor mijn projecten laten zien.</p>
-                        <btn class="btn-ylw"><b>Lees meer</b></btn>
-                    </div>
-                </div>
-                <div class="card shadow">
-                    <img src="./images/placeholder.jpg">
-                    <div class="card-txt-wrapper">
-                        <h3>Voorbeeld</h3>
-                        <p class="subtext1">Dit is een voorbeeld project. Ik wil hier graag thumbnails voor mijn projecten laten zien.</p>
-                        <btn class="btn-ylw"><b>Lees meer</b></btn>
-                    </div>
-                </div>
+                <span id="right-btn" class="fa-solid fa-caret-right fa-2xl fa-sharp fa-beat"></span>
             </div>
         </div>
         <footer id="github" class="github">
@@ -61,7 +50,5 @@
             <a href="https://github.com/ejk1058577"><h2>Volg mij op Github!</h2></a>
         </footer>
     </div>
-
-    <script src="./index.js"></script>
 </body>
 </html>
